@@ -4,7 +4,7 @@
  * Published under MIT license.
  */
 
-const pluginName = 'tnwScroll'
+const pluginName = "tnwScroll"
 
 class TNWScroll {
     constructor(el, options) {
@@ -50,18 +50,18 @@ class TNWScroll {
 }
 
 TNWScroll.prototype.defaults = {
-    eventNameDirectionChange: 'tnw:directionChange',
-    eventNameScroll: 'tnw:scroll'
+    eventNameDirectionChange: "tnw:directionChange",
+    eventNameScroll: "tnw:scroll"
 }
 
 $.fn[pluginName] = function (options) {
     return this.each(function () {
-        let instance = $(this).data(pluginName)
+        let instance = $(this).data(`plugin_${pluginName}`)
 
         if (!instance) {
-            $(this).data(pluginName, new TNWScroll(this, options))
+            $(this).data(`plugin_${pluginName}`, new TNWScroll(this, options))
         } else {
-            if (typeof options === 'string') {
+            if (typeof options === "string") {
                 instance[options]()
             }
         }
