@@ -1,0 +1,48 @@
+{
+  "author": {
+    "name": "Alexander Griffioen",
+    "email": "alexander@thenextweb.com",
+    "url": "https://github.com/oscaralexander"
+  },
+  "bugs": {
+    "url": "https://github.com/oscaralexander/jquery-tnw-scroll/issues"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "description": "jQuery plugin for capturing scroll events.",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.2.0",
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "npx": "^9.7.1"
+  },
+  "homepage": "https://brand.thenextweb.com",
+  "keywords": [
+    "es6",
+    "jquery",
+    "jquery-plugin",
+    "plugin",
+    "scroll",
+    "scrolling"
+  ],
+  "license": "MIT",
+  "main": "./src/jquery.tnw-parallax.js",
+  "name": "jquery-tnw-parallax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscaralexander/jquery-tnw-scroll.git"
+  },
+  "scripts": {
+    "build": "npx babel ./src/jquery.tnw-scroll.js --out-file ./dist/jquery.tnw-scroll.js",
+    "build --production": "BABEL_ENV=production npm run build",
+    "lint": "eslint src"
+  },
+  "version": "1.0.0"
+}
