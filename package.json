@@ -37,7 +37,7 @@
   "name": "jquery-tnw-scroll",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oscaralexander/jquery-tnw-scroll.git"
+    "url": "https://github.com/thenextweb/jquery-tnw-scroll.git"
   },
   "scripts": {
     "build": "npx babel ./src/jquery.tnw-scroll.js --out-file ./dist/jquery.tnw-scroll.js",
