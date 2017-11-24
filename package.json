@@ -2,10 +2,10 @@
   "author": {
     "name": "Alexander Griffioen",
     "email": "alexander@thenextweb.com",
-    "url": "https://github.com/oscaralexander"
+    "url": "https://github.com/thenextweb"
   },
   "bugs": {
-    "url": "https://github.com/oscaralexander/jquery-tnw-scroll/issues"
+    "url": "https://github.com/thenextweb/jquery-tnw-scroll/issues"
   },
   "dependencies": {
     "jquery": "^3.2.1"
@@ -23,7 +23,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "npx": "^9.7.1"
   },
-  "homepage": "https://brand.thenextweb.com",
+  "homepage": "https://design.thenextweb.com",
   "keywords": [
     "es6",
     "jquery",
