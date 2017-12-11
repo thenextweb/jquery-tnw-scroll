@@ -33,7 +33,7 @@
     "scrolling"
   ],
   "license": "MIT",
-  "main": "./src/jquery.tnw-scroll.js",
+  "main": "./dist/jquery.tnw-scroll.js",
   "name": "jquery-tnw-scroll",
   "repository": {
     "type": "git",
