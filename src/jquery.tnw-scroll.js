@@ -14,8 +14,8 @@ class TNWScroll {
     }
 
     init() {
-        this.direction = null
-        this.top = null
+        this.direction = 0
+        this.top = 0
         this.update()
     }
 
@@ -32,7 +32,7 @@ class TNWScroll {
         let top
 
         top = $(window).scrollTop()
-        direction = (top > this.top) ? 1 : ((top < this.top) ? -1 : this.direction)
+        direction = (top > this.top) ? 1 : ((top < this.top) ? -1 : 0)
 
         if (top != this.top) {
             this.trigger(direction, top, this.options.eventNameScroll)
@@ -42,10 +42,10 @@ class TNWScroll {
             this.trigger(direction, top, this.options.eventNameDirectionChange)
         }
 
-        this.direction = direction;
-        this.top = top;
+        this.direction = direction
+        this.top = top
 
-        window.requestAnimationFrame(this.update.bind(this));
+        window.requestAnimationFrame(this.update.bind(this))
     }
 }
 
